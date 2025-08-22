@@ -135,7 +135,7 @@ Ghibli/
 - L‑BFGS: second‑order optimization directly on the pixels of the generated image.
 
 <div align="center">
-  <img src="Data/Screenshot 2025-08-21 at 3.44.10 PM.png" alt="Neural Style Transfer Pipeline" width="70%"/>
+  <img src="Data/process.png" alt="Neural Style Transfer Pipeline" width="70%"/>
   <p><em>Pipeline: Content and style features are extracted and combined</em></p>
 </div>
 
