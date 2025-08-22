@@ -30,6 +30,12 @@ Neural Style Transfer blends the content of one image with the artistic style of
 |------------------|----------------|--------------------------------|
 | content.jpg      | style.jpg      | styled_image_high_quality.jpg |
 
+<!-- Visual mapping -->
+
+| Content | Style | Result |
+|---|---|---|
+| ![content](Input/content.jpg) | ![style](Input/style.jpg) | ![result](Output/styled_image_high_quality.jpg) |
+
 ## ✨ Features
 - VGG19 features with safe ReLU and AvgPool for smoother optimization
 - Smart resizing (preserves aspect ratio; multiples of 32)
@@ -69,13 +75,13 @@ uv pip compile pyproject.toml -o requirements.txt
 ## 🚀 Quick Start
 
 ### Option 1: Jupyter Notebook (Recommended)
-Open and run `style_Transfering.ipynb`. Place your images as:
+Open and run the notebook: [NoteBook/style_Transfering.ipynb](NoteBook/style_Transfering.ipynb). Place your images as:
 - `Input/content.jpg`
 - `Input/style.jpg`
 
 The output will be saved to `Output/styled_image_high_quality.jpg`.
 
-### Notebook workflow (what it does, no code)
+### Notebook workflow ([open notebook](NoteBook/style_Transfering.ipynb))
 - Loads content and style images; converts to tensors with ImageNet normalization.
 - Resizes while preserving aspect ratio; aligns spatial dims to multiples of 32.
 - Builds a VGG19 feature extractor; replaces in-place ReLU with out-of-place; uses AvgPool.
