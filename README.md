@@ -134,10 +134,8 @@ Ghibli/
 - Style Loss: matches Gram matrices across multiple layers to capture texture statistics.
 - L‑BFGS: second‑order optimization directly on the pixels of the generated image.
 
-<div align="center">
-  <img src="Data/process.png" alt="Neural Style Transfer Pipeline" width="70%"/>
-  <p><em>Pipeline: Content and style features are extracted and combined</em></p>
-</div>
+![Neural Style Transfer Pipeline](Data/process.png)
+<p align="center"><em>Pipeline: Content and style features are extracted and combined</em></p>
 
 ## 🧩 Troubleshooting
 - CPU runs: lower `target_size` or `iterations`.
